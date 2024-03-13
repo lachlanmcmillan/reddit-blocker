@@ -4,7 +4,8 @@
   "description": "Blocks the reddit homepage to stop you from doomscrolling.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "web-ext build --source-dir src/ --artifacts-dir dist/",
+    "lint": "web-ext lint --source-dir src/"
   },
   "repository": {
     "type": "git",
