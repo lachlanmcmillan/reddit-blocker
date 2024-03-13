@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Reddit Blocker",
+  "version": "1.0",
+
+  "description": "Blocks subreddits to help you keep focused.",
+
+  "icons": {
+    "200": "icons/logo-200.png"
+  },
+
+  "content_scripts": [
+    {
+      "run_at": "document_start",
+      "matches": ["*://*.reddit.com/*"],
+      "js": ["index.js"]
+    }
+  ]
+}
