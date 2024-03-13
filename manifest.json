@@ -3,7 +3,7 @@
   "name": "Reddit Blocker",
   "version": "1.0",
 
-  "description": "Blocks subreddits to help you keep focused.",
+  "description": "Blocks the reddit homepage to stop you from doomscrolling.",
 
   "icons": {
     "200": "icons/logo-200.png"
