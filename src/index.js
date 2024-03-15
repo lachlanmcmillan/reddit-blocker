@@ -12,6 +12,14 @@ function removeContent() {
   if (main) {
     const parent = main.parentElement;
     parent.removeChild(main);
+
+    // the carousel like element at the bottom of www.reddit.com
+    const masthead = document.querySelector('.masthead');
+    masthead?.parentElement?.removeChild(masthead);
+
+    const rSidebarContainer = document.querySelector('#right-sidebar-container');
+    rSidebarContainer?.parentElement?.removeChild(rSidebarContainer);
+
     observer.disconnect();
   }
 }
@@ -22,6 +30,7 @@ function getSubredditName(pathname) {
 }
 
 function main() {
+  console.log("main~~");
   const { pathname } = window.location;
 
   // is homepage or blocked subreddit
