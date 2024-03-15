@@ -1,5 +1,9 @@
 # Changelog
 
+## v2.1
+
+- Remove leftover console.log
+
 ## v2.0
 
 - Additionally hide the sidebar and carousel on www.reddit.com
