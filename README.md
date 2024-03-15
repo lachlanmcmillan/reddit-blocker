@@ -1,2 +1,5 @@
-# reddit-blocker
-Blocks the reddit homepage to stop you from doomscrolling.
+# Reddit Blocker
+
+A browser extension to eliminate distraction on Reddit by blocking the homepage feed.
+
+Inspired by Youtube homepage blocking extensions.
