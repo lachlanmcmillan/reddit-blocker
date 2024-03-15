@@ -30,7 +30,6 @@ function getSubredditName(pathname) {
 }
 
 function main() {
-  console.log("main~~");
   const { pathname } = window.location;
 
   // is homepage or blocked subreddit
