@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Reddit Blocker</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: sans-serif;
+        background: #f0f0f0;
+        color: #3a3a3a;
+      }
+      .header {
+        display: flex;
+        vertical-align: middle;
+        justify-content: center;
+        align-items: center;
+      }
+      h1 {
+        font-size: 32px;
+        margin: 5px 0 0 10px;
+      }
+      h2 {
+        font-size: 16px;
+        margin: 15px 0px 0px 5px;
+        font-weight: normal;
+        font-size: 15px;
+        color: #666;
+      }
+      .blocked-subreddit-list-container {
+        background: white;
+        border-radius: 4px;
+        margin-top: 5px;
+
+      }
+      .blocked-subreddit-list {
+        margin-top: 0;
+        list-style: none;
+        padding: 10px;
+        height: 200px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+      }
+      .blocked-subreddit-list li {
+        line-height: 16px;
+      }
+      .remove-subreddit-button {
+        border: none;
+        outline: none;
+        background: none;
+        color: red;
+        margin-left: 5px;
+        font-size: 14px;
+        vertical-align: middle;
+      }
+      .remove-subreddit-button:hover {
+        text-decoration: underline;
+        cursor: default;
+      }
+      .input-container {
+        margin-top: 10px;
+        display: flex;
+      }
+      .subreddit-input {
+        flex: 2;
+        padding-left: 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        line-height: 24px;
+      }
+      .subreddit-input:focus {
+        outline: none;
+        border: 1px solid blue;
+      }
+      .add-button {
+        margin-left: 5px;
+        padding: 0 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <img src="icons/logo-200.png" alt="logo" width="40" height="40">
+      <h1>Reddit Blocker</h1>
+    </div>
+    <h2>subreddits</h2>
+    <div class="blocked-subreddit-list-container">
+      <ul id="blocked-subreddit-list" class="blocked-subreddit-list">
+        <!-- <li>
+          <span>example</span>
+          <button class="remove-subreddit-button">x</button>
+        </li> -->
+      </ul>
+    </div>
+    <form id="input-form" class="input-container">
+      <input id="subreddit-input" type="text" class="subreddit-input">
+      <button id="add-button" class="add-button">Add</button>
+    </form>
+
+    <script src="toolbar-popup.js"></script>
+  </body>
+</html>

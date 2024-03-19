@@ -1,4 +1,8 @@
-const blockedSubreddits = ['all'];
+const STORAGE_KEY = "subreddits";
+
+function getStorage() { 
+  return browser.storage.local.get().then(x => x[STORAGE_KEY]);
+}
 
 // This script runs before the page HTML DOM is loaded, so there is no head 
 // or body yet. Use the MutationObserver to execute the main function when
@@ -32,14 +36,16 @@ function getSubredditName(pathname) {
 function main() {
   const { pathname } = window.location;
 
-  // is homepage or blocked subreddit
-  if(/^\/?$/.test(pathname) || (
-    pathname.startsWith('/r/') && 
-    pathname.endsWith('/') &&
-    blockedSubreddits.includes(getSubredditName(pathname))
-  )) {
-    removeContent();
-  } else {
-    observer.disconnect();
-  }
+  getStorage().then(blockedSubreddits => {
+    // is homepage or blocked subreddit
+    if(/^\/?$/.test(pathname) || (
+      pathname.startsWith('/r/') && 
+      pathname.endsWith('/') &&
+      blockedSubreddits.includes(getSubredditName(pathname))
+    )) {
+      removeContent();
+    } else {
+      observer.disconnect();
+    }
+  })
 }

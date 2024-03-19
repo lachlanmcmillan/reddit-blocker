@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Reddit Blocker",
-  "version": "2.1",
+  "version": "3.0",
 
   "description": "Blocks the reddit homepage to stop you from doomscrolling.",
 
@@ -9,11 +9,21 @@
     "200": "icons/logo-200.png"
   },
 
+  "permissions": [
+    "storage"
+  ],
+
   "content_scripts": [
     {
       "run_at": "document_start",
       "matches": ["*://*.reddit.com/*"],
       "js": ["index.js"]
     }
-  ]
+  ],
+
+  "browser_action": {
+    "default_icon": "icons/logo-200.png",
+    "default_title": "Reddit Blocker",
+    "default_popup": "toolbar-popup.html"
+  }
 }
