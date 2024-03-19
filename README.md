@@ -10,13 +10,12 @@ Inspired by Unhook and other extensions which block the Youtube homepage.
 
 Install for Firefox https://addons.mozilla.org/en-US/firefox/addon/reddit-blocker/
 
-<div style="display: flex; justify-content: center;">
+<div>
   <a href="https://raw.githubusercontent.com/lachlanmcmillan/reddit-blocker/main/images/new-reddit-homepage.png">
     <img 
       src="https://raw.githubusercontent.com/lachlanmcmillan/reddit-blocker/main/images/new-reddit-homepage.png"
       alt="screenshot of www.reddit.com with extension enabled"
       width="350" 
-      style="border 2px solid black;"
     >
   </a>
   <a href="https://raw.githubusercontent.com/lachlanmcmillan/reddit-blocker/main/images/old-reddit-homepage.png" style="margin-left: 20px;">
@@ -24,7 +23,6 @@ Install for Firefox https://addons.mozilla.org/en-US/firefox/addon/reddit-blocke
       src="https://raw.githubusercontent.com/lachlanmcmillan/reddit-blocker/main/images/old-reddit-homepage.png" 
       alt="screenshot of old.reddit.com with extension enabled"
       width="350" 
-      style="border 2px solid black;"
     >
   </a>
 </div>
