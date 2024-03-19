@@ -1,5 +1,9 @@
 # Changelog
 
+## v3.0
+
+Add toolbar popup menu to allow adding subreddits
+
 ## v2.1
 
 - Remove leftover console.log
