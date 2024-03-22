@@ -49,7 +49,7 @@ const removeListElement = (li) => {
 const handleSubmit = async (evt) => {
   evt.preventDefault();
   const input = document.querySelector('#subreddit-input');
-  const text = input.value.trim(); 
+  const text = input.value.trim().toLowerCase(); 
   if (text) {
     const exists = await checkSubredditExists(text)
     const hasSpace = /\s/.test(text);
