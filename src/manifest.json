@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Reddit Blocker",
-  "version": "3.0",
+  "version": "3.1",
 
   "description": "Blocks the reddit homepage to stop you from doomscrolling.",
 

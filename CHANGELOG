@@ -1,5 +1,9 @@
 # Changelog
 
+## v3.1
+
+- Fix new/top/controversial/etc not being blocked.
+
 ## v3.0
 
 Add toolbar popup menu to allow adding subreddits
